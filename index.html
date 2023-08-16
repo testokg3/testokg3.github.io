@@ -15,7 +15,7 @@
     function sendMsg(e) {
         e.preventDefault();
         const message = document.getElementById("send_message").value;
-        window.postMessage(message);
+        mobile.onLoginSuccess(message);
     }
   </script>
 </head>
