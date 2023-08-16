@@ -13,14 +13,12 @@
 <head>
     <script type="text/javascript">
     function sendMsg(e) {
-        e.preventDefault();
-        const message = document.getElementById("send_message").value;
-        mobile.onLoginSuccess(message);
+        window.location.href = "test-wallet://result?token=123";
     }
   </script>
 </head>
 <body>
-<h1>Web content (within WebView) v1</h1>
+<h1>Web content (within WebView) v2</h1>
 <div>
     <input value="message" id="send_message">
     <button type="button" onclick="sendMsg(event)">Send message</button>
