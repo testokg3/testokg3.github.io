@@ -14,8 +14,7 @@
     <script type="text/javascript">
     function sendMsg(e) {
         e.preventDefault();
-        const message = document.getElementById("send_message").value;
-        window.postMessage(message);
+        window.postMessage('Hello Android!', '*');
     }
   </script>
 </head>
